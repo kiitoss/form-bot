@@ -13,6 +13,12 @@ cd form-bot
 
 Then, add a `data.json` file containing a structure similar to the [`data-sample.json`](data-sample.json) file.
 
+Then run the project using :
+
+```sh
+python3 main.py
+```
+
 ## Explanation of the data.json file
 
 The JSON object contains 2 attributes:
