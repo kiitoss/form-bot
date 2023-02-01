@@ -1,0 +1,31 @@
+{
+  "url": "https://xxx.com",
+  "instructions": [
+    [
+      {
+        "selector": "button[type='submit']",
+        "action": "click"
+      }
+    ],
+    [
+      {
+        "selector": ".radio-button",
+        "action": "click"
+      },
+      {
+        "selector": "button[type='submit']",
+        "action": "click"
+      }
+    ],
+    [
+      {
+        "selector": "#question-123 .answer-option:nth-child(4)",
+        "action": "click"
+      },
+      {
+        "selector": "button[type='submit']",
+        "action": "click"
+      }
+    ]
+  ]
+}
