@@ -11,7 +11,7 @@ git clone git@github.com:kiitoss/form-bot.git
 cd form-bot
 ```
 
-Then, add a `data.json` file containing a structure similar to the `data-sample.json` file.
+Then, add a `data.json` file containing a structure similar to the [`data-sample.json`](data-sample.json) file.
 
 ## Explanation of the data.json file
 
