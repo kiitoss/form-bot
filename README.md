@@ -23,8 +23,8 @@ python3 main.py
 
 The JSON object contains 2 attributes:
 
-- url: url of the form to be filled in automatically
-- instructions: a list of instructions to be performed
+- `url` : url of the form to be filled in automatically
+- `instructions` : a list of instructions to be performed
 
 ```json
 {
@@ -64,13 +64,13 @@ The instructions are grouped in sub-lists to visually separate the pages of a fo
 
 A statement can contain the following properties:
 
-- selector: the css selector of the HTML element
-- action : the action to be performed on the selected element
-- value : (optional) the value used for the action
+- `selector` : the css selector of the HTML element
+- `action` : the action to be performed on the selected element
+- `value` : (optional) the value used for the action
 
 The possible actions are :
 
-- click : click on the selected object
+- `click` : click on the selected object
 
 ```json
 {
@@ -79,7 +79,7 @@ The possible actions are :
 }
 ```
 
-- write : write the value contained in the "value" attribute
+- `write` : write the value contained in the "value" attribute
 
 ```json
 {
