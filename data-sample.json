@@ -1,5 +1,6 @@
 {
   "url": "https://xxx.com",
+  "repetitions": 5,
   "instructions": [
     [
       {
@@ -21,6 +22,11 @@
       {
         "selector": "#question-123 .answer-option:nth-child(4)",
         "action": "click"
+      },
+      {
+        "selector": ".textarea.content",
+        "action": "write",
+        "value": "This is the new content of the textarea."
       },
       {
         "selector": "button[type='submit']",

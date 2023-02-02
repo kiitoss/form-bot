@@ -28,7 +28,8 @@ The JSON object contains 2 attributes:
 
 ```json
 {
-  "url": "https://xxx.com",
+  "url": "https://xxx.com", // url of the form
+  "repetitions": 5, // nb of forms to be sent
   "instructions": [
     // page 1
     [
@@ -42,6 +43,11 @@ The JSON object contains 2 attributes:
       {
         "selector": ".radio-button",
         "action": "click"
+      },
+      {
+        "selector": ".textarea.content",
+        "action": "write",
+        "value": "This is the new content of the textarea."
       },
       {
         "selector": "button[type='submit']",
@@ -60,7 +66,25 @@ A statement can contain the following properties:
 
 - selector: the css selector of the HTML element
 - action : the action to be performed on the selected element
+- value : (optional) the value used for the action
 
 The possible actions are :
 
 - click : click on the selected object
+
+```json
+{
+  "selector": "button[type='submit']",
+  "action": "click"
+}
+```
+
+- write : write the value contained in the "value" attribute
+
+```json
+{
+  "selector": ".textarea.content",
+  "action": "write",
+  "value": "This is the new content of the textarea."
+}
+```
